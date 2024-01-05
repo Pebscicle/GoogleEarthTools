@@ -44,14 +44,6 @@ public class KMLReader {
         return convertStringToCoordinates(shapeCoordinates);
     }
 
-    /*
-     * 
-     */
-    public void movePolygonToNewCoordinates()
-    {
-
-    }
-
 
         private List<Coordinates> convertStringToCoordinates(String coordsString){
             String[] coordsArray = coordsString.split(","); //Get rid of 0 ... part, then the rest are coordinates.

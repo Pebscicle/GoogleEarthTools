@@ -9,6 +9,11 @@ public class CoordinatesModifier {
      */
     public List<Coordinates> movePolygon(List<Coordinates> coordinates, double longitude, double latitude)
     {
+        for(int i  = 0; i < coordinates.size(); i++)
+        {
+            coordinates.get(i).modifyLatitude(latitude);
+            coordinates.get(i).modifyLongitude(longitude);
+        }
         return coordinates;
     }
 
